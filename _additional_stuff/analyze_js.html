@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Input Analyzer</title>
+</head>
+<body>
+
+<input type="text" id="userInput" placeholder="Type something...">
+<button onclick="analyzeInput()">Analyze</button>
+<p id="feedback"></p>
+
+<script>
+// Function to analyze the input and give feedback
+function analyzeInput() {
+    var input = document.getElementById('userInput').value; // Reads input
+    var feedback = ""; // Initializes feedback string
+
+    if(input.length > 10) {
+        feedback = "Whoa, you typed a lot!";
+    } else if(input.length > 0) {
+        feedback = "Nice, you typed something.";
+    } else {
+        feedback = "Yo, type something in the box.";
+    }
+
+    document.getElementById('feedback').innerText = feedback; // Displays feedback
+}
+</script>
+
+</body>
+</html>

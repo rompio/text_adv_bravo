@@ -36,11 +36,11 @@ elif decision.lower() == "negotiate":
     printc("You tell the pirates that you will help them if they give you a part of the tresure")
     #next print + new input + new if elif
 
-def gameOver()
+# def gameOver()
 
-def act2()
+# def act2()
 
-def act3()
+# def act3()
 
 
 
