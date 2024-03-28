@@ -1,5 +1,11 @@
+import pygame
 from stringcolor import cs
 import time
+
+pygame.mixer.init()
+pygame.mixer.music.load("./_music/pirates of the caribbean theme best.mp3")
+pygame.mixer.music.set_volume(0.2)  # Set the volume to half
+pygame.mixer.music.play(-1)
 
 def printc(string, color="white"):
     # string first, then color optional - default white
@@ -17,13 +23,18 @@ if decision.lower() == "shout":
     printc("YOU AND THE GUYS ARE TOAST!", "yellow")
     time.sleep(2)
     printc("YOU ARE DEAD!", "black")
+
     # restart?
     restart = input("Do you want to try again? ")
     if restart.lower() == "yes":
-        exec(open("/home/dci-student/Schreibtisch/DCI-Python/240327/text_adv_bravo/text_adv_bravo copy.py").read())
+        exec(open("./text_adv_bravo_act_3.py").read())
     elif restart.lower() == "no":
         time.sleep(2)
         printc("YOU ARE DEAD!")
+    else :
+        printc("You have to choose one of the options!")
+        time.sleep(2)
+        exec(open("./text_adv_bravo_act_3.py").read())
 elif decision.lower() == "whine":
     # printc("The ugly monster cracks itself so hard that the earth starts cracking too! YOU AND THE GUYS FALL INTO AN ENDLESS HOLE! YOU ARE DEAD!")
     printc("The ugly monster cracks itself so hard...", "red")
@@ -35,10 +46,14 @@ elif decision.lower() == "whine":
     printc("YOU ARE DEAD!", "black")
     restart = input("Do you want to try again? ")
     if restart.lower() == "yes":
-        exec(open("/home/dci-student/Schreibtisch/DCI-Python/240327/text_adv_bravo/text_adv_bravo copy.py").read())
+        exec(open("./text_adv_bravo_act_3.py").read())
     elif restart.lower() == "no":
         time.sleep(2)
         printc("YOU ARE DEAD!")
+    else :
+        printc("You have to choose one of the options!")
+        time.sleep(2)
+        exec(open("./text_adv_bravo_act_3.py").read())
 elif decision.lower() == "offer":
     printc("The monster seems to be courious and comes closer to you.", "green")
     time.sleep(2)
@@ -46,12 +61,15 @@ elif decision.lower() == "offer":
     time.sleep(2)
     printc("It's a mirror. The monster sees itself and starts crying. It's so ugly that it can't stand itself. It runs away and you can take the treasure.", "blue")
     time.sleep(6)
+    printc("Instead of leaving the Island, you decide to become the pirates leader and party with them all day every day on the beach, with whiskey sours till the end of all days!", "red")
+    time.sleep(7)
     printc("YOU WIN!", "gold")
+    time.sleep(2)
     #next print + new input + new if elif
 else :
     printc("You have to choose one of the options!")
     time.sleep(2)
-    exec(open("/home/dci-student/Schreibtisch/DCI-Python/240327/text_adv_bravo/text_adv_bravo_act_3.py").read())
+    exec(open("./text_adv_bravo_act_3.py").read())
     # act3()
     # #next print + new input + new if elif
 # def gameOver()
