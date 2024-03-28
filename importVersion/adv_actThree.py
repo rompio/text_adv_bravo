@@ -44,18 +44,7 @@ def actThree():
         time.sleep(3)
         printc("YOU ARE DEAD!", "black")
         gameOver()
-        """
-        restart = input("Do you want to try again? ")
-        if restart.lower() == "yes":
-            exec(open("./text_adv_bravo_act_3.py").read())
-        elif restart.lower() == "no":
-            time.sleep(2)
-            printc("YOU ARE DEAD!")
-        else :
-            printc("You have to choose one of the options!")
-            time.sleep(2)
-            exec(open("./text_adv_bravo_act_3.py").read())
-        """
+        
     elif decision.lower() == "offer":
         printc("The monster seems to be courious and comes closer to you.", "green")
         time.sleep(2)

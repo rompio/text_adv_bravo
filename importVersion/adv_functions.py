@@ -1,7 +1,7 @@
 from stringcolor import cs
 import time
 import os
-from main import *
+from main import actOne
 #-----------------------------restart and maintance-----------------------------  
 """def actTwo():
     exec(open("text_adv_bravo_ac2.py").read())

@@ -1,6 +1,6 @@
 from stringcolor import cs
 import time
-
+from adv_actThree import actThree
 
 # printing with color easily
 def printc(string, color="white"):

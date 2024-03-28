@@ -1,6 +1,6 @@
 
-from adv_functions import printc
-from adv_actTwo import start_act2
+from adv_functions import *
+
 
 #-----------------------------First act-----------------------------
 
