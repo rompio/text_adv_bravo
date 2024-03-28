@@ -38,8 +38,8 @@ Suddenly, a piercing screech echoes through the jungle, causing your group to fr
         time.sleep(2)
         printc("You are dead.","red")
         time.sleep(1)
-        try_again = input("Do you want to try again? (yes/no): ")
-        if try_again.lower() == "yes":
+        try_again = input("Do you want to try again? (y/n): ")
+        if try_again.lower() == "y":
             start_act2()
         else:
             printc("Thank you for playing. Goodbye!", "yellow")
