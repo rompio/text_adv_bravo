@@ -1,5 +1,7 @@
 from stringcolor import cs
 import time
+from text_adv_bravo_act_1 import gameOver
+from text_adv_bravo_act_1 import actThree
 
 # printing with color easily
 def printc(string, color="white"):
@@ -28,7 +30,7 @@ Suddenly, a piercing screech echoes through the jungle, causing your group to fr
         time.sleep(1)
         printc("In the end, you are victorious, but at a great cost. The pirates lie wounded and exhausted, their numbers decimated by the fierce battle. As you survey the aftermath of the conflict, you realize that the jungle holds many more dangers than you could have ever imagined, and that your journey is far from over.", "yellow")
         time.sleep(2)
-        #Act3 continues
+        actThree()
     elif "scare" in decision.lower():
         printc("You try to scare the birds away by shouting and waving your arms, but they only seem to grow more agitated and aggressive in response.", "yellow")
         time.sleep(1)
@@ -52,7 +54,7 @@ Suddenly, a piercing screech echoes through the jungle, causing your group to fr
         time.sleep(1)
         printc("Thanks to your decision to communicate with the birds, you've gained valuable insight into the dangers lurking within the jungle, and perhaps even made some unexpected allies along the way. But remember, the path ahead is still fraught with peril, and every choice you make could have far-reaching consequences.", "green")
         time.sleep(1)
-        #Act3 continues
+        actThree()
     else:
         printc("Invalid decision. Please choose one of the available options.", "red")
         printc(act2_decisions, "cyan")

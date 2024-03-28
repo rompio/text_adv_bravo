@@ -2,12 +2,10 @@ from stringcolor import cs
 import time
 import os
 
-
 tresure = 0
-varActTwo = "/text_adv_bravo_act_3.py"
+pirates = 100
 
 intro = "Introduction:"
-
 
 def printc(string, color="white"):
     # string first, then color optional - default white
@@ -16,9 +14,10 @@ def printc(string, color="white"):
 #-----------------------------Link to the other act's-----------------------------
 
 def actTwo():
-    exec(open("./text_adv_bravo_act_2.py").read())
+    exec(open("./text_adv_bravo_ac2.py").read())
+    
 def actThree():
-    exec(open("./text_adv_bravo_act_3.py").read())
+    exec(open("./text_adv_bravo_act_3_copy.py").read())
 
 #-----------------------------restart and maintance-----------------------------    
 
@@ -41,9 +40,6 @@ def restart():
     time.sleep(1)
     printc("99%", "red")
     time.sleep(3)
-    printc("That were...", "white")
-    printc("...lies :D", "yellow")
-    time.sleep(3)
     actOne()
 
 def gameOver():
@@ -54,10 +50,10 @@ def gameOver():
     time.sleep(2)
     printc("y | n", "blue")
     decision = input("Try again?: ")
-    if decision.lower() == "y":
+    if decision.lower() == "y" or decision.lower() == "yes":
         clear_console()
         restart()
-    elif decision.lower() == "n":
+    elif decision.lower() == "n" or decision.lower() == "no":
         clear_console()    
 
 #-----------------------------First act-----------------------------
@@ -68,6 +64,7 @@ def actOne():
     time.sleep(4)
     printc("Act 1: The Encounter", "green")
     printc("As you explore the island, you stumble upon a ragtag group of pirates who have made this island their hideout. They greet you with suspicion, questioning your motives. With no means of escape, you strike a deal with the pirates: help them locate a legendary treasure rumored to be hidden somewhere on the island, and they'll assist you in returning home.")
+    time.sleep(1)
     printc("fight | help | negotiate", "blue")
     decision = input("Choose: ")
     if decision.lower() == "fight":
