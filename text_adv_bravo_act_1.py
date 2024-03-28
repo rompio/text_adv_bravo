@@ -14,10 +14,10 @@ def printc(string, color="white"):
 #-----------------------------Link to the other act's-----------------------------
 
 def actTwo():
-    exec(open("./text_adv_bravo_ac2.py").read())
+    exec(open("text_adv_bravo_ac2.py").read())
     
 def actThree():
-    exec(open("./text_adv_bravo_act_3_copy.py").read())
+    exec(open("text_adv_bravo_act_3_copy.py").read())
 
 #-----------------------------restart and maintance-----------------------------    
 
@@ -82,18 +82,17 @@ def actOne():
         decision = int(input("Enter a percentage: "))
         if decision <= 33:
             tresure += 1
-            print(tresure)
             actTwo()
         elif decision > 33:
             gameOver()
 
 #-----------------------------Start the game-----------------------------
 decision = input("You want to play? y/n: ")
-if decision.lower() == "y":
+if decision.lower() == "y" or decision.lower() == "yes":
         clear_console()
         actOne()
         
-elif decision.lower() == "n":
+elif decision.lower() == "n" or decision.lower() == "no":
         clear_console()
 
 
