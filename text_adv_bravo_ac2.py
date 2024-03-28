@@ -16,7 +16,7 @@ Together with the pirates, you embark on a perilous journey through dense jungle
 
 Suddenly, a piercing screech echoes through the jungle, causing your group to freeze in their tracks. A group of strange, bird-like creatures swoops down...
 """
-    act2_decisions = "(Try to fight them with the pirates/ Try to scare them away/ Attempt to communicate with the birds.)"
+    act2_decisions = "(fight: Try to fight them with the pirates/ Scare:Try to scare them away/ Communicate: Attempt to communicate with the birds.)"
 
     printc(act2, "yellow")
     time.sleep(3)
