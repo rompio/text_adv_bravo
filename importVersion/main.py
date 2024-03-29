@@ -87,8 +87,8 @@ text = """
 
 
 
-  
-                                                                                                                                                       
+
+
 """
 
 
@@ -145,17 +145,22 @@ def gameOver():
 #-------------------------------------actThree---------------------------
 
 def actThree():
+    print("")
     printc("Act 3: The Guardian", "gold")
+    print("")
     printc('At last, you reach the heart of the island, where the legendary treasure is said to lie. But guarding it is a fearsome creature, a monstrous guardian awakened by your intrusion. "What do thy want?" it roars from the caves opening')
     printc('shout: "Give me your treasure or we will kill you!" | whine: "please do not be disturbed - we will go our separate ways"| offer: "We bring a present for your majesty!"', "blue")
-
+    print("")
     decision = input("What do you do?: ")
 
     if decision.lower() == "shout":
+        print("")
         printc("The ugly monster gets furious and sets the whole area on fire with it's burning breath!.", "red")
         time.sleep(3)
+        print("")
         printc("YOU AND THE GUYS ARE TOAST!", "yellow")
         time.sleep(2)
+        print("")
         printc("YOU ARE DEAD!", "black")
         gameOver()
 
@@ -165,17 +170,22 @@ def actThree():
             actThree()
         elif restart.lower() == "no":
             time.sleep(2)
+            print("")
             printc("YOU ARE DEAD!")
         else :
+            print("")
             printc("You have to choose one of the options!")
             time.sleep(2)
             actThree()
     elif decision.lower() == "whine":
         # printc("The ugly monster cracks itself so hard that the earth starts cracking too! YOU AND THE GUYS FALL INTO AN ENDLESS HOLE! YOU ARE DEAD!")
+        print("")
         printc("The ugly monster cracks itself so hard...", "red")
         time.sleep(3)
+        print("")
         printc("... that the earth starts cracking too!", "yellow")
         time.sleep(2)
+        print("")
         printc("YOU AND THE GUYS FALL INTO AN ENDLESS HOLE!", "red")
         time.sleep(3)
         printc("YOU ARE DEAD!", "black")
@@ -193,18 +203,24 @@ def actThree():
             exec(open("./text_adv_bravo_act_3.py").read())
         """
     elif decision.lower() == "offer":
+        print("")
         printc("The monster seems to be courious and comes closer to you.", "green")
         time.sleep(2)
+        print("")
         printc("You give it the present and it opens it.", "yellow")
         time.sleep(2)
+        print("")
         printc("It's a mirror. The monster sees itself and starts crying. It's so ugly that it can't stand itself. It runs away and you can take the treasure.", "blue")
         time.sleep(6)
+        print("")
         printc("Instead of leaving the Island, you decide to become the pirates leader and party with them all day every day on the beach, with whiskey sours till the end of all days!", "red")
         time.sleep(7)
+        print("")
         printc("YOU WIN!", "gold")
         time.sleep(2)
         #next print + new input + new if elif
     else :
+        print("")
         printc("You have to choose one of the options!")
         time.sleep(2)
         actThree()
@@ -228,22 +244,30 @@ Suddenly, a piercing screech echoes through the jungle, causing your group to fr
     time.sleep(3)
     printc(act2_decisions, "cyan")
     time.sleep(0.5)
+    print("")
     decision = input("CHOOSE: ") 
     if "fight" in decision.lower():
+        print("")
         printc("With a grim determination, you draw your weapon and prepare to defend yourself against the mysterious birds. The pirates beside you follow suit, their expressions hardened with resolve as they brace for battle.", "yellow")
         time.sleep(1)
+        print("")
         printc("Despite your best efforts, the birds prove to be formidable opponents, their swift movements and coordinated attacks making it difficult to gain the upper hand. With each passing moment, your group finds themselves pushed further and further back, forced to retreat under the relentless assault of the avian assailants.", "orange")
         time.sleep(1)
+        print("")
         printc("In the end, you are victorious, but at a great cost. The pirates lie wounded and exhausted, their numbers decimated by the fierce battle. As you survey the aftermath of the conflict, you realize that the jungle holds many more dangers than you could have ever imagined, and that your journey is far from over.", "yellow")
         time.sleep(2)
         actThree()
     elif "scare" in decision.lower():
+        print("")
         printc("You try to scare the birds away by shouting and waving your arms, but they only seem to grow more agitated and aggressive in response.", "yellow")
         time.sleep(1)
+        print("")
         printc("The largest of the birds swoops down from the treetops, its talons extended as it dives towards you with deadly intent. In a desperate bid to defend yourself, you raise your weapon and prepare to face the creature head-on.", "orange")
         time.sleep(2)
+        print("")
         printc("You are dead.","red")
         time.sleep(1)
+        print("")
         try_again = input("Do you want to try again? (y/n): ")
         if try_again.lower() == "y":
             start_act2()
@@ -252,44 +276,60 @@ Suddenly, a piercing screech echoes through the jungle, causing your group to fr
             time.sleep(1)
             exit()
     elif "communicate" in decision.lower():
+        print("")
         printc("You raise your hands in a non-threatening gesture and try to mimic the birds' calls, hoping to establish some form of communication.", "yellow")
         time.sleep(1)
+        print("")
         printc("To your surprise, the largest of the birds descends from the treetops, its wings outstretched as it lands gracefully before you. Its bright eyes regard you with a mixture of curiosity and intelligence, and you sense a faint understanding passing between you.", "yellow")
         time.sleep(1)
+        print("")
         printc("With a soft cooing sound, the bird begins to communicate in a series of intricate melodies and gestures, its meaning clear even if its language is not. It seems to be warning you of danger ahead, urging caution in your journey through the jungle.", "yellow")
         time.sleep(1)
+        print("")
         printc("Thanks to your decision to communicate with the birds, you've gained valuable insight into the dangers lurking within the jungle, and perhaps even made some unexpected allies along the way. But remember, the path ahead is still fraught with peril, and every choice you make could have far-reaching consequences.", "green")
         time.sleep(1)
         actThree()
     else:
+        print("")
         printc("Invalid decision. Please choose one of the available options.", "red")
         printc(act2_decisions, "cyan")
+        print("")
         decision = input("CHOOSE: ")
 #-----------------------------First act-----------------------------
 
 
 def actOne():
     tresure = 0
+    print("")
     printc("Introduction:", "green")
+    print("")
     printc("You find yourself washed ashore on a mysterious island after a violent storm wreaks havoc on your ship. As you regain consciousness, you realize you're not alone. Pirate remnants litter the beach, and the distant sounds of waves crashing against the rocky cliffs echo ominously. Determined to survive, you venture deeper into the island's uncharted territory, unaware of the dangers lurking within.")
     time.sleep(4)
+    print("")
     printc("Act 1: The Encounter", "green")
+    print("")
     printc("As you explore the island, you stumble upon a ragtag group of pirates who have made this island their hideout. They greet you with suspicion, questioning your motives. With no means of escape, you strike a deal with the pirates: help them locate a legendary treasure rumored to be hidden somewhere on the island, and they'll assist you in returning home.")
     time.sleep(1)
+    print("")
     printc("fight | help | negotiate", "blue")
+    print("")
     decision = input("Choose: ")
     if decision.lower() == "fight":
         gameOver()
     
     elif decision.lower() == "help":
+        print("")
         printc("You are helping the pirates and agree to their conditions")
         time.sleep(3)
         start_act2()
     
     elif decision.lower() == "negotiate":
+        print("")
         printc("You tell the pirates that you will help them if they give you a part of the tresure")
         time.sleep(2)
+        print("")
         printc('"Pirate" How much do you want?')
+        print("")
         decision = int(input("Enter a percentage: "))
         if decision <= 33:
             tresure += 1
@@ -300,7 +340,7 @@ def actOne():
 clear_console()
 blink_text(text)
 
-
+print("")
 decision = input("You want to play? y/n: ")
 if decision.lower() == "y" or decision.lower() == "yes":
         clear_console()
