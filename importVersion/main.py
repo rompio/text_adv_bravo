@@ -3,16 +3,20 @@ import pygame
 from stringcolor import cs
 import os
 import time
-import time
-import time
 
 tresure = 0
 pirates = 100
 #-----------------------------restart-----------------------------  
+pygame.mixer.init()
+pygame.mixer.music.load("./_music/pirates of the caribbean theme best.mp3")
+pygame.mixer.music.set_volume(0.2)  # Set the volume to half
+pygame.mixer.music.play(-1)
+
 """def actTwo():
     exec(open("text_adv_bravo_ac2.py").read())
 
     
+
 def actTwo():
     exec(open("text_adv_bravo_ac2.py").read())
     
@@ -39,7 +43,7 @@ text = """
 # WWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWW
 # WWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWW
 """
-def blink_text(text):
+def blink_text(txt):
     for char in text:
         if char == ":":
             print("\033[31m" + char, end="", flush=True)  # Blinking red text
