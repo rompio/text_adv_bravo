@@ -3,6 +3,8 @@ import pygame
 from stringcolor import cs
 import os
 import time
+import time
+import time
 
 tresure = 0
 pirates = 100
