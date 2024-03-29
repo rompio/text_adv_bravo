@@ -50,6 +50,7 @@ def blink_text(txt):
         else:
             print("\033[0m" + char, end="", flush=True)  # Steady black text
         time.sleep(0.001)  # Pause for 0.5 seconds
+        
     print("\033[0m")  # Reset text color to default
 
 def printc(string, color="white"):
