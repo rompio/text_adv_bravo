@@ -24,33 +24,73 @@ def actThree():
     exec(open("text_adv_bravo_act_3_copy.py").read())
     """
 text = """
-# WWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWW
-# WWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWW
-# WWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWW
-# WWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWW
-# WWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWW
-# WWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWMWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWW
-# WWWWWWWWWWWWWWKOkkOOkOOKNNKOkkkkOkOXNKOkkOOOOOKNWWWWKOkkkkO0XWWKOkkkkkkkkOXX0OkOkOOkOKWWX0OkkkOOKWWWWWWWWWWWWWW
-# WWWWWWWWWWWWWXd::::::::ckOo:::::::lO0l::::::::o0WWNOl::::::cxNXd:::::::::ckkc:::::::ckKxc::::::ckNWWWWWWWWWWWWW
-# WWWWWWWWWWWWWKo:::ldl:::oOOdl:::cdOX0l:::odc::cOWW0o::colc::lOX0xxl:::cdxOKx:::cloookXOc:::clooxKWWWWWWWWWWWWWW
-# WWWWWWWWWWWWWKo:::lxo:::oXWXd:::oKWW0l:::loc::ckXXd:::okxl:::oKWWNx:::l0WWNx::::cccoKW0c::::cclokNWWWWWWWWWWWWW
-# WWWWWWWWWWWWWKo::::::::o0WWXd:::oKWW0l::::c::::ckOl::::::::::lOWWNx:::l0WWNk:::clookXWNOdolcc:::l0WWWWWWWWWWWWW
-# WWWWWWWWWWWWWKo:::lkOO0NWXkoc:::coxK0l::cx0kl:::xkc::coddl:::cOWWNx:::l0WWNk:::cloodd0Kkoollc:::l0WWWWWWWWWWWWW
-# WWWWWWWWWWWWWXd::ckNWWWWWKo:::::::o00l::l0WKo::lkOl::oKWNOl::l0WWNxc:coKWWNkc:::::::lOOl::::::cd0NWWWWWWWWWWWWW
-# WWWWWWWWWWWWWNK00KNWWWWWWNK000000KXWNK00XWWNK00KNNK00XWWWNK0KXWWWWX00KXWWWWXK0000000KNNK00000KXNWWWWWWWWWWWWWWW
-# WWWWWWWWMWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWMWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWW
-# WWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWW
-# WWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWW
-# WWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWW
+
+
+                                                                                                                                                               
+                                                                                                                                                               
+                                                                                                                                                               
+                                                                                                                                                               
+                                                                                                                                                               
+                                                                                                 πππ                                                           
+                                                                                                πππππ                                                          
+                                        ππππππππππππ                                           πππππ                                                           
+                                   πππππ          πππππ                                       πππππ                 πππ                                        
+                                 πππππ             ππππππ                                    πππππ                 ππππ                                        
+                                πππππ        π      πππππ ππ                                πππππ                 ππ π                                         
+                                πππππ      ππ      ππππππππ                                πππππ ππ  πππππ       πππ                                           
+                                 ππππ     ππ       ππππππππ                         πππππππππππ    πππ  ππ     πππππ                                           
+                                   ππ   πππ       πππππππ          πππ      πππππππππππ  πππππ   πππ   ππ       ππππ                                           
+                                       πππ      ππππππππππ ππππ  ππππππ   πππ    πππππ  πππππ   ππππππππ  ππππ  πππ                                            
+                                     ππππππ πππππππππππππ  ππππππ    ππ ππππ    πππππ  πππππ   ππππ ππ  ππππ    πππ                                            
+                                    ππππ πππππππππππππππ   ππππ   ππππ ππππ    πππππ  πππππ   πππππ    πππππ   ππππ                                            
+                       ππ          ππππ    ππππ   πππππ   ππππ    πππ ππππ    πππππ  πππππ   ππππππ    πππππππππππ                                             
+                     πππππ       πππππ           πππππ   ππππ        ππππ    πππππ  ππππππ  πππππππππππ πππππππππ                                              
+                    πππππππ    ππππππ           πππππ   πππππ       πππππ   πππππππππππππππππππππππππ    ππππππ                                                
+                    ππππππππππππππππ           πππππ   πππππ        πππππππππππππππ πππππππ   ππππ                                                             
+                   πππππππππππππππ            πππππππππππππ         ππππππ   ππππ    ∞π                                                                        
+                   ππππππππππππππ             πππππππ ππππ                          ∞πππ                                                                       
+                    ππππππππππππ              πππππ  ππ                            ≈ππππ                                                                       
+                     πππππππππ                                                    ≈ππππ                                                                        
+                                                                            πππ  ≈ππππ                                                                         
+                                                                         ππ  ≈π ∞ππππ                                                                          
+                                                                       ππ     ππππππ    π                                                                      
+                                                                     πππ    ππππππππ πππ                                                                       
+                                                                    πππ    ≈πππππππππππ                                                                        
+                                                                   ππππ    ≈ππππππ                                                                             
+                                                                  ππππ     πππππ ≈π                                                                            
+                                                                 πππππππππππππππ ππ                                                                            
+                                                                 ≈ππππππππ≈ππππ  ππ                                                                            
+                                                                  ≈πππππ  ππππ   ≈π                                                                            
+                                                                         ππππ    π                                                                             
+                                                                        ≈ππππ   √π                                                                  ππ         
+                                                                        πππππ  ≈π                                                                  πππ         
+                                                                       ≈ππππ  ∞π                    ππ√  π        √ππππ                           πππ          
+                                                                       ≈ππππππππ                 π     π         πππ √π                          πππ           
+                                                                       ≈ππππππ                ∞π     ππ         πππ √π                          πππ            
+                                                                       ≈πππππ                ππ     ππ         πππ π                       πππ πππ             
+                                                            πππ         ≈≈∞                  √ππ  ∞ππ     πππ ππππ        ππ πππ πππππ  ππ  ≈ππππ              
+                                                           ππππ                                  πππ     ππ√ πππ   πππ≈ππππ  πππ  ∞πππ√ππ    πππ               
+                               πππ                         πππ                                  πππ     ∞ππ πππ  √ππ   ππππ ∞ππ  ∞πππ∞ππ   √πππ                
+          πππππππππππππππππ∞∞ ππ                          πππ                         π       ∞πππ   πππππ πππ  πππ   ππππ √ππ  ≈πππ∞ππππππππππ π              
+        ∞πππ       πππ       ππ                     ∞π∞  πππ    πππ  πππ ππ≈ππππππππππππ     ππππ   ππ  πππππ  πππ   ππππ ππππ ∞ππππππππππ πππππ               
+        πππ      ππππ      πππ                     ≈π√∞∞πππ   ππ  π  πππ    πππππππ∞√πππππππππππ  πππ  ≈ππππ  πππ   πππππππππ  πππππ∞πππ   ≈ππ                 
+         √π     π πππ    ππππ        πππ π∞πππ     ππ  πππ  πππ  π  ∞ππ  πππ        πππππππππππ  ≈ππππππππππππππππππππππππππ   ≈ππ                             
+              √π ≈πππ   ππππ  ππ ≈   πππ  ∞ππ     √ππ πππ  πππ∞≈   √ππ              ππππππππππ   ππππππππππππ ≈πππ                                             
+             ππ  πππ    πππ ππ   π  √ππ  √πππππππ ≈πππππ  ππππ    ππππ               ππππππππ      ≈√∞                                                         
+   ππ      πππ   πππ π πππ∞ππ   ππ ≈ππ  √ππππππ   πππππ  ππππππππ πππ                  ≈≈≈                                                                     
+  ππππ   ππππ   πππππ ππππππ    πππππ  ππππ πππππππππππππ πππππ  πππ                                                                                           
+ πππππππππππ    √ππ  ∞πππππππ ππ ππππ ππππππ∞πππππ ≈πππ                                                                                                        
+ ππππππππππ      π   ≈πππππππππ  πππ   ≈∞∞                                                                                                                     
+ ≈ππππππππ            ≈πππ≈√                                                                                                                                   
+  π∞ππππ                                                                                                                                                       
 """
 def blink_text(txt):
     for char in text:
-        if char == ":":
+        if char == "π" or "∞" or "≈" or "√" or "≠" or "∏"or "∑"or "∆"or "∫"or "√"or "∞"or "∂":
             print("\033[31m" + char, end="", flush=True)  # Blinking red text
         else:
             print("\033[0m" + char, end="", flush=True)  # Steady black text
         time.sleep(0.001)  # Pause for 0.5 seconds
-        
     print("\033[0m")  # Reset text color to default
 
 def printc(string, color="white"):
