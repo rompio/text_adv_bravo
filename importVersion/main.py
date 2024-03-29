@@ -82,15 +82,24 @@ text = """
  πππππππππππ    √ππ  ∞πππππππ ππ ππππ ππππππ∞πππππ ≈πππ                                                                                                        
  ππππππππππ      π   ≈πππππππππ  πππ   ≈∞∞                                                                                                                     
  ≈ππππππππ            ≈πππ≈√                                                                                                                                   
-  π∞ππππ                                                                                                                                                       
+  π∞ππππ  
+
+
+
+
+  
+                                                                                                                                                       
 """
+
+
+
 def blink_text(txt):
     for char in text:
         if char == "π" or "∞" or "≈" or "√" or "≠" or "∏"or "∑"or "∆"or "∫"or "√"or "∞"or "∂":
             print("\033[31m" + char, end="", flush=True)  # Blinking red text
         else:
             print("\033[0m" + char, end="", flush=True)  # Steady black text
-        time.sleep(0.001)  # Pause for 0.5 seconds
+        time.sleep(0.0001)  # Pause for 0.5 seconds
     print("\033[0m")  # Reset text color to default
 
 def printc(string, color="white"):
