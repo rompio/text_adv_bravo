@@ -2,11 +2,15 @@ import time
 from commonFunctions import printc
 from adv_functions import gameOver
 import time
-from adv_actTwo import actTwo
+
 
 #-----------------------------First act-----------------------------
 
 def actOne():
+    from adv_actTwo import actTwo
+
+    tresure = 0
+    
     printc("Introduction:", "green")
     printc("You find yourself washed ashore on a mysterious island after a violent storm wreaks havoc on your ship. As you regain consciousness, you realize you're not alone. Pirate remnants litter the beach, and the distant sounds of waves crashing against the rocky cliffs echo ominously. Determined to survive, you venture deeper into the island's uncharted territory, unaware of the dangers lurking within.")
     time.sleep(4)

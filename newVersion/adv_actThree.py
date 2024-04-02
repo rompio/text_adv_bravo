@@ -1,6 +1,8 @@
 import pygame
 from stringcolor import cs
 import time
+from commonFunctions import printc
+from adv_functions import gameOver
 
 pygame.mixer.init()
 pygame.mixer.music.load("./_music/pirates of the caribbean theme best.mp3")
@@ -8,6 +10,7 @@ pygame.mixer.music.set_volume(0.2)  # Set the volume to half
 pygame.mixer.music.play(-1)
 
 def actThree():
+    from adv_actOne import actOne
     printc("Act 3: The Guardian", "gold")
     printc('At last, you reach the heart of the island, where the legendary treasure is said to lie. But guarding it is a fearsome creature, a monstrous guardian awakened by your intrusion. "What do thy want?" it roars from the caves opening')
     printc('shout: "Give me your treasure or we will kill you!" | whine: "please do not be disturbed - we will go our separate ways"| offer: "We bring a present for your majesty!"', "blue")
@@ -20,7 +23,7 @@ def actThree():
         printc("YOU AND THE GUYS ARE TOAST!", "yellow")
         time.sleep(2)
         printc("YOU ARE DEAD!", "black")
-        gameOver(act_One)
+        gameOver(actOne)
 
     elif decision.lower() == "whine":
         # printc("The ugly monster cracks itself so hard that the earth starts cracking too! YOU AND THE GUYS FALL INTO AN ENDLESS HOLE! YOU ARE DEAD!")
@@ -31,7 +34,7 @@ def actThree():
         printc("YOU AND THE GUYS FALL INTO AN ENDLESS HOLE!", "red")
         time.sleep(3)
         printc("YOU ARE DEAD!", "black")
-        gameOver(act_One))
+        gameOver(actOne)
         
     elif decision.lower() == "offer":
         printc("The monster seems to be courious and comes closer to you.", "green")

@@ -1,9 +1,10 @@
 
 import pygame
-from stringcolor import cs
 import os
 import time
-from adv_functions import *
+from stringcolor import cs
+
+from adv_functions import clear_console
 from adv_actOne import actOne
 
 tresure = 0
@@ -44,8 +45,8 @@ blink_text(text)
 
 decision = input("You want to play? y/n: ")
 if decision.lower() == "y" or decision.lower() == "yes":
-        clear_console()
-        actOne()
+    clear_console()
+    actOne()
         
 elif decision.lower() == "n" or decision.lower() == "no":
-        clear_console()
+    clear_console()

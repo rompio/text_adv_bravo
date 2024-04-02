@@ -1,16 +1,20 @@
 from commonFunctions import printc
-from adv_actOne import actOne
+import time
+
 def actTwo():
-    act2 = """
-Act 2: The Hunt
+    from adv_actOne import actOne
+    from adv_actThree import actThree
+    from adv_functions import gameOver
+    act2 ="""
+    Act 2: The Hunt
 
-Together with the pirates, you embark on a perilous journey through dense jungles, treacherous cliffs, and hidden caves, all while evading the island's dangers and discovering its secrets. Along the way, you forge uneasy alliances, navigate deadly traps, and face off against wild beasts.
+    Together with the pirates, you embark on a perilous journey through dense jungles, treacherous cliffs, and hidden caves, all while evading the island's dangers and discovering its secrets. Along the way, you forge uneasy alliances, navigate deadly traps, and face off against wild beasts.
 
-Suddenly, a piercing screech echoes through the jungle, causing your group to freeze in their tracks. A group of strange, bird-like creatures swoops down...
-"""
+    Suddenly, a piercing screech echoes through the jungle, causing your group to freeze in their tracks. A group of strange, bird-like creatures swoops down...
+    """
     act2_decisions = "(Try to fight them with the pirates/ Try to scare them away/ Attempt to communicate with the birds.)"
 
-    printc(actTwo, "yellow")
+    printc(act2, "yellow")
     time.sleep(3)
     printc(act2_decisions, "cyan")
     time.sleep(0.5)
