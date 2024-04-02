@@ -1,4 +1,8 @@
-
+import time
+from commonFunctions import printc
+from adv_functions import gameOver
+import time
+from adv_actTwo import actTwo
 
 #-----------------------------First act-----------------------------
 
@@ -12,12 +16,12 @@ def actOne():
     printc("fight | help | negotiate", "blue")
     decision = input("Choose: ")
     if decision.lower() == "fight":
-        gameOver(actOne)#Pass here actOne() as a parameter
+        gameOver(actOne)
     
     elif decision.lower() == "help":
         printc("You are helping the pirates and agree to their conditions")
         time.sleep(3)
-        start_act2()#Pass here actTwo() as a parameter
+        actTwo()
     
     elif decision.lower() == "negotiate":
         printc("You tell the pirates that you will help them if they give you a part of the tresure")
@@ -26,12 +30,6 @@ def actOne():
         decision = int(input("Enter a percentage: "))
         if decision <= 33:
             tresure += 1
-            start_act2()#Pass here actTwo() as a parameter
+            actTwo()
         elif decision > 33:
-            gameOver()#Pass here actOne() as a parameter
-
-
-
-
-
-    
+            gameOver(actOne)   
