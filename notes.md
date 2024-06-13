@@ -1,1 +1,0 @@
-Act 1: the text must be edited so the decision is not already made in the text.
